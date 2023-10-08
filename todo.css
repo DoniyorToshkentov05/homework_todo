@@ -1,0 +1,137 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+body {
+    background: white;
+    color: black;
+}
+main {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+section {
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+}
+
+h3 {
+    color: brown;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h4 {
+    color: var(--grey);
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.create-todo input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow:black 0px 0px 10px 0px;
+    margin-bottom: 1.5rem;
+}
+
+.create-todo input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    background: brown;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: brown 0px 0px 10px 0px;
+    transition: 0.3s ease-in-out;
+    
+}
+.create-todo input[type="submit"]:hover {
+    opacity: 0.75;
+
+}
+
+.todo-list .list {
+    margin: 1rem 0;
+}
+
+.todo-list .todo-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: black 0px 0px 10px 0px  ;
+    margin-bottom: 1rem;
+}
+
+.todo-item label {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content {
+    flex: 1 1 0%;
+}
+
+.todo-item .todo-content input {
+    color: black;
+    font-size: 1.125rem;
+}
+
+.todo-item .actions {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item .actions button {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.todo-item .actions button:hover {
+    opacity: 0.75;
+}
+
+.todo-item .actions .edit-btn {
+    margin-right: 1.5rem;
+    background-color: rgb(255, 221, 0);
+   
+}
+
+.todo-item .actions .delete-btn {
+    margin-right: 0.5rem;
+    background-color: brown;
+}
+
+.todo-item.done .todo-content input {
+    text-decoration: line-through;
+}
